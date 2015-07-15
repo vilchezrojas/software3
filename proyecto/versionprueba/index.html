@@ -1,32 +1,99 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>hola mundo</title>
-<script src="js/phaser.min.js"></script>
-<audio src="audio/pregunta.wav" preload="auto" autoplay></audio> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="es-es">
+<title>audio</title>
+<style type="text/css">
+<!--
+.Estilo1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 90px;
+}
+.Estilo5 {color: #FF0000}
+-->
+</style>
 </head>
-<body>
-<script>
-window.onload = function(){
-	var game = new Phaser.Game(800,600, Phaser.CANVAS, 'game', {preload: preload,create: create});
-	function preload(){
-		
-		game.load.image("uno", "imagenes/numero1.jpg");
-		game.load.audio("audio", "audio/cuentale.mp3");	
-	}
-	function create(){
-	var texto = "ESTE NUMERO ES:";
-	var style = {font:"40px Arial", fill:"#DF013A", align:"center"};
-	var textomostrado = game.add.text(game.world.centerX,0,texto,style);
-		textomostrado.anchor.setTo(0.5,0);
-	var uno = game.add.sprite(game.world.centerX, game.world.centerY, "uno");
-		uno.anchor.setTo(0.5,0.5);
-		
-	}
+<!--<script>
+function cargar_sonido(){
+	document.getElementById('contenedor').innerHTML='<embed src="cuentale.mp3" autostart="true"/>'
 };
+</script> -->
+<body>
 
-</script>
+
+
+    <table width="100%" height="100%" border="0" background="imagen/fondo.jpg">
+   
+      <tr>
+        <td bgcolor=""><div align="center" class="Estilo1">
+          <p><span class="Estilo5">1</span>    
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+          </p>
+        </div></td>
+        <td bgcolor="" ><div align="center" class="Estilo1">
+          <p><span class="Estilo5">2</span>
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+          </p>
+        </div></td>
+        <td bgcolor=""><div align="center" class="Estilo1">
+          <p><span class="Estilo5">3</span>
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+          </p>
+        </div></td>
+        <td bgcolor="" ><div align="center" class="Estilo1">
+          <p><span class="Estilo5">4</span>
+          <audio id="sonido" src="cuentale.mp3"></audio> 
+          <form>     
+            <button onclick="javascript:document.getElementById('sonido').play();" background="fondo.jpg"></button> 
+            </form>
+          </p>
+        </div></td>
+        <td bgcolor="" ><div align="center" class="Estilo1">
+          <p>            
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <span class="Estilo5">5</span>
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+            
+          </p>
+        </div></td>
+      </tr>
+      <tr>
+        <td bgcolor="" ><div align="center" class="Estilo1">
+          <p><span class="Estilo5">6</span>            
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+          </p>
+        </div></td>
+        <td bgcolor=""><div align="center" class="Estilo1">
+          <p><span class="Estilo5">7</span>
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+          </p>
+        </div></td>
+        <td bgcolor=""><div align="center" class="Estilo1">
+          <p><span class="Estilo5">8</span>
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+          </p>
+        </div></td>
+        <td bgcolor=""><div align="center" class="Estilo1">
+          <p><span class="Estilo5">9</span>
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+          </p>
+        </div></td>
+        <td bgcolor=""><div align="center" class="Estilo1">
+          <p><span class="Estilo5">10</span>
+            <audio id="sonido" src="cuentale.mp3"></audio>        
+            <button onclick="javascript:document.getElementById('sonido').play();">Ejecutar</button>
+          </p>
+        </div></td>
+      </tr>
+</table>
+  
 
 </body>
 </html>
