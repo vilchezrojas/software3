@@ -1,0 +1,2 @@
+1. - instalar un servidor
+2. - ejecutar principal1.html
