@@ -1,85 +1,87 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="es-es">
-<title>audio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Principal</title>
 <style type="text/css">
 <!--
-.Estilo1 {
-	font-family: Geneva, Arial, Helvetica, sans-serif;
-	font-size: 90px;
+.Estilo1 {font-family: Georgia, "Times New Roman", Times, serif}
+.Estilo4 {
+	color: #FF0000;
+	font-size: 36px;
+	font-weight: bold;
 }
-.Estilo5 {color: #FF0000}
 -->
 </style>
 </head>
+<EMBED SRC="audio/fondo1.mp3" autostart=true LOOP=true volume="10" hidden="true" width="0" height="0" > 
 <body>
-    <table width="100%" height="100%" border="0" background="imagen/fondo.jpg">   
-      <tr>
-        <td bgcolor=""><div align="center" class="Estilo1">
-          <p><span class="Estilo5">1</span>    
-            <audio id="sonido1" src="audio/uno.mp3"></audio>        
-            <button onclick="javascript:document.getElementById('sonido1').play();">UNO</button>
-          </p>
-        </div></td>
-        <td bgcolor="" ><div align="center" class="Estilo1">
-          <p><span class="Estilo5">2</span>
-            <audio id="sonido2" src="audio/dos.mp3"></audio>        
-            <button onclick="javascript:document.getElementById('sonido2').play();">DOS</button>
-          </p>
-        </div></td>
-        <td bgcolor=""><div align="center" class="Estilo1">
-          <p><span class="Estilo5">3</span>
-            <audio id="sonido3" src="audio/tres.mp3"></audio>        
-            <button onclick="javascript:document.getElementById('sonido3').play();">TRES</button>
-          </p>
-        </div></td>
-        <td bgcolor="" ><div align="center" class="Estilo1">
-          <p><span class="Estilo5">4</span>
-          <audio id="sonido4" src="audio/cuatro.mp3"></audio>            
-            <button onclick="javascript:document.getElementById('sonido4').play();">CUATRO</button>             
-          </p>
-        </div></td>
-        <td bgcolor="" ><div align="center" class="Estilo1">
-          <p>            
-            <audio id="sonido5" src="audio/cinco.mp3"></audio>        
-            <span class="Estilo5">5</span>
-            <button onclick="javascript:document.getElementById('sonido5').play();">CINCO</button>            
-          </p>
-        </div></td>
-      </tr>
-      <tr>
-        <td bgcolor="" ><div align="center" class="Estilo1">
-          <p><span class="Estilo5">6</span>            
-            <audio id="sonido6" src="audio/sies.mp3"></audio>        
-            <button onclick="javascript:document.getElementById('sonido6').play();">SIES</button>
-          </p>
-        </div></td>
-        <td bgcolor=""><div align="center" class="Estilo1">
-          <p><span class="Estilo5">7</span>
-            <audio id="sonido7" src="audio/siete.mp3"></audio>        
-            <button onclick="javascript:document.getElementById('sonido7').play();">SIETE</button>
-          </p>
-        </div></td>
-        <td bgcolor=""><div align="center" class="Estilo1">
-          <p><span class="Estilo5">8</span>
-            <audio id="sonido8" src="audio/ocho.mp3"></audio>        
-            <button onclick="javascript:document.getElementById('sonido8').play();">OCHO</button>
-          </p>
-        </div></td>
-        <td bgcolor=""><div align="center" class="Estilo1">
-          <p><span class="Estilo5">9</span>
-            <audio id="sonido9" src="audio/nueve.mp3"></audio>        
-            <button onclick="javascript:document.getElementById('sonido9').play();">NUEVE</button>
-          </p>
-        </div></td>
-        <td bgcolor=""><div align="center" class="Estilo1">
-          <p><span class="Estilo5">10</span>
-            <audio id="sonido10" src="audio/diez.mp3"></audio>        
-            <button onclick="javascript:document.getElementById('sonido10').play();">DIEZ</button>
-          </p>
-        </div></td>
-      </tr>
-</table>
+<table background="imagen/fondo1.jpg" width="100%" height="100%">
+<p>
+    <tr>
+      <td><div align="center" class="Estilo4">ESCOGE LAS OPCIONES DE</div></td>
+     </tr>
+    </p>
+    <p>
+    <tr>
+      <td><div align="center" class="Estilo4">CONOCER TU MUNDO</div></td>
+     </tr>
+    </p>
+    <p>
+    <tr>
+      <td><div align="center" class="Estilo1">
+            <form name="form1" action="vocales.html" method="get">
+     	<input type="submit" class="Estilo4" value="VOCALES">
+      </form>
+      </div>
+      </td>
+    </tr>
+    </p>
+    <p>
+        <tr>
+      <td><div align="center" class="Estilo1">
+            <form name="form2" action="colores.html" method="get">
+     	<input type="submit" class="Estilo4" value="COLORES">
+      </form>
+      </div></td>
+    </tr>
+    </p>
+    <p>
+    <tr>
+      <td><div align="center" class="Estilo1">
+            <form name="form3" action="numeros.html" method="get">
+     	<input type="submit" class="Estilo4" value="NUMEROS">
+      </form>
+      </div></td>
+    </tr>
+    </p>
+    <p>
+    <tr>
+      <td><div align="center" class="Estilo1">
+            <form name="form4" action="figuras.html" method="get">
+     	<input type="submit" class="Estilo4" value="FIGURAS">
+      </form>
+      </div></td>
+    </tr>
+    </p>
+    <p>
+    <tr>
+      <td><div align="center" class="Estilo1">
+            <form name="form5" action="abecedarios.html" method="get">
+     	<input type="submit" class="Estilo4" value="ABECEDARIOS">
+      </form>
+      </div></td>
+    </tr>
+        </p>
+    <p>
+    <tr>
+      <td><div align="center" class="Estilo1">
+            <form name="form6" action="animales.html" method="get">
+     	<input type="submit" class="Estilo4" value="ANIMALES">
+      </form> </div>
+      </td>
+    </tr>
+        </p>    
+    </table>
 </body>
 </html>

@@ -2,5 +2,5 @@
 <?php
 session_start();
 session_destroy();
-header("location:principal1.html");
+header("location:index.html");
 ?>
