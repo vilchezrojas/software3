@@ -18,10 +18,28 @@
 .Estilo15 {font-family: Georgia, "Times New Roman", Times, serif; font-style: italic; }
 -->
 </style>
+<style type="text/css">
+    html, body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+ 
+    #full-screen-background-image {
+        z-index: -999;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+</style>
 </head>
-<EMBED SRC="audio/fondo2.mp3" AUTOSTART=true LOOP=true VOLUME="10" WIDTH="0" HEIGHT="0">
+<!-- <EMBED SRC="audio/fondo2.mp3" AUTOSTART=true LOOP=true VOLUME="10" WIDTH="0" HEIGHT="0"> -->
 <body>
-    <table width="100%" height="100%" border="0" background="imagen/fondo.jpg">   
+<img alt="full screen background image" src="imagen/fondo.jpg" id="full-screen-background-image" />
+      
       <tr>
         <td bgcolor=""><div align="center" class="Estilo1">
           <p><span class="Estilo12">a</span>    
